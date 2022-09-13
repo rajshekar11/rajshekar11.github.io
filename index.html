@@ -1,304 +1,116 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raja Shekhara A.E</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        font-family: "Roboto Slab", serif;
-      }
-      body {
-        background-color: #ecf2f7;
-      }
-      #navbar {
-        width: 100%;
-        height: 80px;
-        background: transparent;
-        background-color: white;
-        opacity: 95%;
-        border-color: transparent;
-        display: flex;
-        justify-content: flex-end;
-        position: sticky;
-        top: 0%;
-        gap: 50px;
-        align-items: center;
-        padding-right: 60px;
-      }
-      #navbar > p {
-        font-weight: bold;
-      }
-      #about {
-        width: 100%;
-        margin-bottom: 80px;
-      }
-      .left_about {
-        margin-top: 5%;
-        margin-left: 15%;
-        font-size: 22px;
-      }
-      .left_about > h2 {
-        margin-top: 10px;
-      }
-      .right_about {
-        margin-top: 5%;
-        margin-left: 20%;
-      }
-      .right_about > img {
-        width: 280px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-      .grdColor {
-        color: #051937;
-        font-size: 20px;
-      }
-      #skills {
-        width: 100%;
-      }
-      .resume {
-        padding: 10px 20px;
-        background-color: #00cc00;
-        width: fit-content;
-        margin-top: 15px;
-        color: white;
-        font-size: 16px;
-        border-radius: 5px;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-      }
-      .aboutexplain {
-        width: 35%;
-        margin: auto;
-        margin-top: 8%;
-      }
-      .aboutFlex {
-        display: flex;
-        gap: 20%;
-      }
-      .aboutexplain > h2 {
-        text-align: center;
-      }
-      .aboutexplain > p {
-        margin-top: 30px;
-        line-height: 22px;
-        text-align: center;
-      }
-      .githubDi {
-        margin-top: 20px;
-      }
-      .githubDi:hover {
-        cursor: pointer;
-      }
-      .githubDi > img {
-        width: 25px;
-      }
-      .linkedIcon {
-        width: 25px;
-        margin-left: 15px;
-      }
-      @media all and (min-width: 480px) and (max-width: 780px) {
-        #navbar {
-          height: 70px;
-        }
-        .left_about {
-          margin-left: 5%;
-        }
-        .left_about > h2 {
-          font-size: 16px;
-        }
-        .right_about {
-          margin-top: 5%;
-          margin-left: 14%;
-        }
-        .right_about > img {
-          width: 180px;
-        }
-        .resume {
-          padding: 8px 18px;
-          font-size: 14px;
-        }
-        .aboutexplain {
-          width: 75%;
-        }
-        .aboutFlex {
-          gap: 19%;
-        }
-        .aboutexplain > h2 {
-          text-align: center;
-          font-size: 18px;
-        }
-        .aboutexplain > p {
-          margin-top: 20px;
-          line-height: 18px;
-          font-size: 14px;
-        }
-        #skills {
-          width: 100%;
-          height: 700px;
-          border: 10px solid red;
-        }
-        .mainskills {
-          width: 60%;
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-      @media all and (min-width: 200px) and (max-width: 479px) {
-        #navbar {
-          height: 80px;
-          justify-content: flex-start;
-          padding-left: 30px;
-        }
-        .left_about {
-          margin: auto;
-          text-align: center;
-        }
-        .left_about > h2 {
-          font-size: 16px;
-        }
-        .right_about {
-          margin-top: 5%;
-          margin-left: 14%;
-          display: flex;
-          justify-content: center;
-        }
-        .right_about > img {
-          width: 180px;
-          margin: auto;
-        }
-        .resume {
-          padding: 6px 14px;
-          font-size: 12px;
-          margin: auto;
-          margin-top: 10px;
-          text-align: center;
-        }
-        .aboutexplain {
-          width: 100%;
-        }
-        .aboutFlex {
-          display: block;
-        }
-        .aboutexplain > h2 {
-          text-align: center;
-          font-size: 17px;
-        }
-        .aboutexplain > p {
-          margin-top: 20px;
-          line-height: 17px;
-          font-size: 14px;
-        }
-        .mainskills {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      #skills {
-        width: 100%;
-        height: 700px;
-        background-color: #f0f8ff;
-        margin: auto;
-        /* border: 1px solid transparent; */
-      }
-      #skills > h1 {
-        text-align: center;
-        margin-top: 80px;
-      }
-      .mainskills {
-        width: 40%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 5%;
-        margin: auto;
-      }
-      .mainskills > div {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        display: grid;
-        align-items: center;
-        padding: 15px 15px;
-        border-radius: 5px;
-        margin-top: 50px;
-        background-color: #f5fffa;
-      }
-      .mainskills > div:hover {
-        background-color: white;
-      }
-      .mainskills > div > img {
-        width: 50%;
-        margin: auto;
-      }
-      .mainskills > div > h3 {
-        text-align: center;
-        margin-top: 7px;
-      }
-    </style>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Rajshekar A.E</title>
   </head>
   <body>
-    <div id="navbar">
-      <p>About</p>
-      <p>Skills</p>
-      <p>Projects</p>
-      <p>Contact</p>
-    </div>
-    <div id="container">
-      <div id="about">
-        <div class="aboutFlex">
-          <div class="left_about">
-            <h2>Hi, I am</h2>
-            <h2>Raja Shekhara A.E</h2>
-            <h2 class="grdColor">Java Backend Developer</h2>
-            <div class="resume">
-              <a href="/contents/Rajashekhara A.E_Resume (1).pdf" download
-                >Resume</a
-              >
-            </div>
-            <div
-              class="githubDi"
-              onclick="window.location.href='https://github.com/rajshekar11'"
-            >
-              <img
-                src="https://about.codecov.io/wp-content/themes/codecov/assets/logos/ci/github/github-icon.svg"
-                alt=""
-              />
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">R</a>
+        </div>
 
-              <a href="https://www.linkedin.com/in/rajashekhar-a-e-322958150/">
-                <img
-                  class="linkedIcon"
-                  src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-128.png"
-                  alt=""
-                />
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">
+                <i class="uil uil-home"></i>Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav_icon"></i> About
               </a>
-            </div>
-          </div>
-          <div class="right_about">
-            <img src="/contents/Raj.jpg" alt="" />
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav_icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link projects">
+                <i class="uil uil-lightbulb-alt nav_icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav_icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am
+            <span class="home__title-color">Raja Shekhara A.E</span><br />
+            Java Backend <br>Developer
+          </h1>
+
+          <a href="contents/Rajashekhara A.E_Resume (1).pdf" class="button" download>Resume</a>
+        </div>
+       
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/rajashekhar-a-e-322958150/" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/rajshekar11" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <img src="contents/Raj.jpg" alt="" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-container bd-grid">
+          <!-- <div class="about-img">
+            <img src="assets/img/Profile1.png" alt="" />
+          </div> -->
+
+          <div style="text-align: center">
+            <p class="about-text">
+              Aspiring Java Backend Developer, currently studying at Masai School. Collaborative, team player who is proficient in working with interdisciplinary teams and executing goal-oriented projects. Strongly interested in obtaining a Software Developer position to work on enhancing the product experience.
+            </p>
+            <br />
+            <p>
+              Drop a mail @ rajshekar767@gmail.com
+              <i
+                style="color: #4070f4; font-size: 1.2rem; cursor: pointer"
+                class="bx bx-copy"
+                id="copy"
+              ></i>
+            </p>
           </div>
         </div>
-        <div class="aboutexplain">
-          <h2>About</h2>
-          <p>
-            Aspiring Java Backend Developer, currently studying at Masai School.
-            Collaborative, team player who is proficient in working with
-            interdisciplinary teams and executing goal-oriented projects.
-            Strongly interested in obtaining a Software Developer position to
-            work on enhancing the product experience.
-          </p>
-        </div>
-      </div>
-      <div id="skills">
-        <h1>Skills</h1>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
         <div class="mainskills">
           <div>
             <img
@@ -357,9 +169,82 @@
             <h3>AWS</h3>
           </div>
         </div>
-      </div>
-      <div id="project"></div>
-      <div id="contact"></div>
-    </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-img">
+            <img src="contents/codecov.png" alt="" />
+            <p class="project-title">Codecov.io clone</p>
+            <p class="project-subtitle">
+              Codecov gives companies actionable coverage
+              insights when and where they need them to ensure
+              they are shipping quality code. <br />
+              <br />
+             
+              Collaborative project: Accomplished with a team
+              of 5 developers in 7days <br />
+        
+              <br />HTML | CSS | Javascript | NodeJS 
+            </p>
+            <div class="project-btns">
+              <a
+                href="https://github.com/rajshekar11/shocking-blood-2056"
+                target="_blank"
+                class="small-btn button"
+              >
+                Code<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://comfy-peony-436092.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-img">
+            <img src="contents/indianexpress.png" alt="" />
+            <p class="project-title">Indianexpress.com clone</p>
+            <p class="project-subtitle">
+              A news website that brings to users the latest news
+              from all around the world and performs various
+              functions like sign up, log out, subscribe, and much
+              more <br />
+              <br />
+              Collaborative project: Accomplished with a team
+              of 5 developers executed in 6 days
+              <br />
+              <br />HTML | CSS | Javascript | Github
+            </p>
+            <div class="project-btns">
+              <a
+                href="https://github.com/Raj4709267/Web-19-IndianExpress"
+                target="_blank"
+                class="small-btn button"
+              >
+                Code<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://lighthearted-truffle-d27293.netlify.app/index.html"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
   </body>
 </html>
