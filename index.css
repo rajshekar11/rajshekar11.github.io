@@ -463,6 +463,28 @@ img.man-icons {
   transform: scale(1.1);
 }
 
+/* ===== FOOTER =====*/
+.footer {
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 3.5rem 0;
+}
+.footer-title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+.footer-social {
+  margin-bottom: var(--mb-4);
+}
+.footer-icon {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 var(--mb-2);
+}
+
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
