@@ -47,10 +47,37 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-//     reset: true
+     reset: true
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 200}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*SCROLL HOME*/
+sr.reveal( ".home-title", {} );
+sr.reveal( ".button", { delay: 200 } );
+sr.reveal( ".home-img", { delay: 200 } );
+sr.reveal( ".home-social-icon", { interval: 200 } );
+
+/*SCROLL ABOUT*/
+sr.reveal( ".about-img", {} );
+sr.reveal( ".about-subtitle", { delay: 200 } );
+sr.reveal( ".about-text", { delay: 200 } );
+
+// Scross main skills mainskills
+sr.reveal( ".mainskills", { interval: 100 } );
+sr.reveal( ".mskill-img", { delay: 200 } );
+sr.reveal( ".mskill-text", { delay: 200 } );
+/*SCROLL SKILLS*/
+sr.reveal( ".skills-subtitle", {} );
+sr.reveal( ".skills-text", {} );
+sr.reveal( ".skills-data", { interval: 100 } );
+// sr.reveal(".skills-img", { delay: 600 });
+
+/*SCROLL projects*/
+sr.reveal( ".project-img", { interval: 200 } );
+
+/*SCROLL CONTACT*/
+// sr.reveal(".contact-input", { interval: 200 });
