@@ -85,7 +85,7 @@
         </div>
 
         <div class="home__img">
-          <img src="contents/profile.png" alt="" />
+          <img src="contents/16profile.png" alt="" />
         </div>
       </section>
 
@@ -366,6 +366,24 @@
         </div>
       </section>
 
+      <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
+<!-- Prepare a container for your calendar. -->
+
+<div class="calendar">
+  <h1>My GitHub Contributions</h1>
+    <!-- Loading stuff -->
+    
+</div>
+
        <!--===== FOOTER + CONTACT=====-->
     <footer class="footer section" id="contact">
       <h2 class="section-title">Get in touch</h2>
@@ -405,3 +423,17 @@
     <script src="main.js"></script>
   </body>
 </html>
+
+<script>
+  GitHubCalendar(".calendar", "rajshekar11");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "rajshekar11", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "rajshekar11", {
+     proxy (username) {
+       return fetch(`https://your-proxy.com/github?user=${rajshekar11}`)
+     }
+  }).then(r => r.text())
+</script>
