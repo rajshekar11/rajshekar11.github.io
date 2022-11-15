@@ -674,6 +674,7 @@ pre {
 
 .center-h1{
   text-align: center;
+  color: var(--first-color);
 }
 section#counter-stats {
   display: flex;
@@ -717,4 +718,8 @@ font-size: 3rem;
 
 .second-project{
   margin-top: 25px;
+}
+
+.margin-purpusegithub{
+  margin-bottom: 50px;
 }
