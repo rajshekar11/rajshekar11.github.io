@@ -189,6 +189,7 @@ header{
   background-color: var(--first-color);
 }
 
+
 /*=== Show menu ===*/
 .show {
   right: 0;
@@ -667,6 +668,8 @@ pre {
 
 .calendar {
     margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* stats */
@@ -711,4 +714,9 @@ font-size: 3rem;
   width: 100%;
   margin: 10px;
 
+}
+
+
+.second-project{
+  margin-top: 25px;
 }
