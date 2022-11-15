@@ -45,19 +45,19 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2000,
-    delay: 100,
+    duration: 500,
+    delay: 80,
      reset: true
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 100}); 
-sr.reveal('.home__social-icon',{ interval: 100}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
+sr.reveal('.home__social-icon',{ interval: 80}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 80}); 
 
 /*SCROLL HOME*/
 sr.reveal( ".home-title", {} );
-sr.reveal( ".button", { delay: 100 } );
+sr.reveal( ".button", { delay: 60 } );
 sr.reveal( ".home-img", { delay: 100 } );
 sr.reveal( ".home-social-icon", { interval: 100 } );
 
@@ -77,7 +77,7 @@ sr.reveal( ".skills-data", { interval: 100 } );
 // sr.reveal(".skills-img", { delay: 600 });
 
 /*SCROLL projects*/
-sr.reveal( ".project-img", { interval: 100 } );
+sr.reveal( ".project-img", { interval: 80 } );
 
 // SCROLL CONTACT
 sr.reveal(".contact-input", { interval: 100 });
